@@ -19,13 +19,13 @@ clean-targets:
 models:
   tp_final_ad:
     marts:
-      +materialized: view
+      +materialized: table
     facts:
-      +materialized: view
+      +materialized: table
     dimensions:
-      +materialized: view
+      +materialized: table
     staging:
-      +materialized: view
+      +materialized: table
 
 seeds:
   tp_final_ad:
