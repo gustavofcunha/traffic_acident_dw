@@ -22,4 +22,4 @@ dim_date = pd.DataFrame({
     'dia_semana': date_range.weekday.map(dias_semana_pt)
 })
 
-dim_date.to_csv('data.csv', index=False)
+dim_date.to_csv('/home/gustavocunha/tp_final_ad/seeds/data.csv', index=False)

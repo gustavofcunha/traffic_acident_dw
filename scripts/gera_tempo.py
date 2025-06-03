@@ -10,4 +10,4 @@ for h in range(24):
         })
 
 dim_tempo = pd.DataFrame(times)
-dim_tempo.to_csv('dim_tempo.csv', index=False)
+dim_tempo.to_csv('/home/gustavocunha/tp_final_ad/seeds/dim_tempo.csv', index=False)

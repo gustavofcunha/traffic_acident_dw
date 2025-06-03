@@ -26,3 +26,10 @@ models:
       +materialized: view
     staging:
       +materialized: view
+
+seeds:
+  tp_final_ad:
+    data:
+      header: true
+      delimiter: ","
+      quote_columns: true
