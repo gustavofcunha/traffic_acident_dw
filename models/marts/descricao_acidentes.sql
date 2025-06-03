@@ -40,4 +40,3 @@ INNER JOIN {{ ref('dim_tempo') }} I
 ON A.hora_boletim = I.chave_tempo
 INNER JOIN {{ ref('dim_tempo') }} J
 ON A.hora_inclusao = J.chave_tempo
-WHERE A.numero_boletim = '2021-009100344-001'
