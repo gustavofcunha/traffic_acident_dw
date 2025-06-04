@@ -33,3 +33,11 @@ seeds:
       header: true
       delimiter: ","
       quote_columns: true
+    tempo:
+      header: true
+      delimiter: ","
+      quote_columns: true
+    base_bruta_acidentes:
+      header: true
+      delimiter: ","
+      quote_columns: true

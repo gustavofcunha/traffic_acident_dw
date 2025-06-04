@@ -1,0 +1,59 @@
+version: 2
+
+models:
+  - name: fct_acidente
+    description: "Tabela fato que consolida as informações sobre acidentes de trânsito."
+    columns:
+      - name: data_boletim
+        tests:
+          - relationships:
+              to: ref('dim_data')
+              field: chave_data
+
+      - name: hora_boletim
+        tests:
+          - relationships:
+              to: ref('dim_tempo')
+              field: chave_tempo
+
+      - name: data_inclusao
+        tests:
+          - relationships:
+              to: ref('dim_data')
+              field: chave_data
+
+      - name: hora_inclusao
+        tests:
+          - relationships:
+              to: ref('dim_tempo')
+              field: chave_tempo
+
+      - name: cod_tipo_acidente
+        tests:
+          - relationships:
+              to: ref('dim_tipo_acidente')
+              field: cod_tipo_acidente
+
+      - name: cod_clima
+        tests:
+          - relationships:
+              to: ref('dim_clima')
+              field: cod_clima
+
+      - name: cod_pavimento
+        tests:
+          - relationships:
+              to: ref('dim_pavimento')
+              field: cod_pavimento
+
+      - name: cod_regional
+        tests:
+          - relationships:
+              to: ref('dim_regional')
+              field: cod_regional
+
+      - name: cod_origem_boletim
+        tests:
+          - relationships:
+              to: ref('dim_origem_boletim')
+              field: cod_origem_boletim
